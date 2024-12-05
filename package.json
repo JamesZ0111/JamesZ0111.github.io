@@ -4,8 +4,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev": "next dev",
     "build": "next build",
-    "deploy": "gh-pages -d out"
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "vercel --prod"
   },
   "dependencies": {
     "@react-three/drei": "^9.105.4",
