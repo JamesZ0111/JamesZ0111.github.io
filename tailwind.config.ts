@@ -27,6 +27,8 @@ const config = {
     },
     extend: {
       colors: {
+        'spaceblack': '#0C0E19',
+        'sandyellow': '#CCA16F',
         black: {
           DEFAULT: "#000",
           100: "#000319",
