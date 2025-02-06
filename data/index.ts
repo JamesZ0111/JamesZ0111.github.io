@@ -76,7 +76,7 @@ export const projects = [
     des: "Coming",
     img: "/placeholdercard.png",
     iconLists: ["/re.svg"],
-    link: "/ui.google.com",
+    link: "https://google.com",
   },
   {
     id: 2,
@@ -84,7 +84,7 @@ export const projects = [
     des: "Using Python and robotic software TM Flow to integrate automated robotics task in manufacturing.",
     img: "/placeholdercard.png",
     iconLists: ["python.png"],
-    link: "/ui.google.com",
+    link: "https://google.com",
   },
   {
     id: 3,
@@ -92,7 +92,7 @@ export const projects = [
     des: "Portfolio for all of my projects and experiences.",
     img: "/placeholdercard.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
-    link: "/ui.google.com",
+    link: "https://google.com",
   },
   {
     id: 4,
@@ -100,40 +100,25 @@ export const projects = [
     des: "Using React and Tailwind CSS to build a job platform for international students",
     img: "/placeholdercard.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
-    link: "/ui.google.com",
+    link: "https://google.com",
   },
 ];
 
 export const testimonials = [
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: "Placeholder",
+    name: "Saran Sriananthakumar",
+    title: "Finance Grad @ ASCI",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: "Placeholder",
+    name: "Harry Kodithuwakku",
+    title: "Engineering lead @ Branach",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: "Placeholder",
+    name: "Placeholder",
+    title: "Placeholder",
   },
 ];
 
@@ -143,37 +128,30 @@ export const companies = [
     name: "cloudinary",
     img: "/cloud.svg",
     nameImg: "/cloudName.svg",
-  }
+  },
 ];
 
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Robotics engineer @ Branach",
+    desc: "Using Python and robotic software TM Flow to automate robotic arm in the production line.",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/workinglogo.jpeg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Web Developer @ Stint",
+    desc: "Assisted designing and integrating components of the website.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    thumbnail: "/workinglogo.jpeg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Cardio Vascular Sim Engineering @ Monash Heart Hack",
+    desc: "Heart build hardware and software testing platform for total artificial hearth.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/workinglogo.jpeg",
   },
 ];
 

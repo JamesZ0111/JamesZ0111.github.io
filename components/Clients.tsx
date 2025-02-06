@@ -10,13 +10,13 @@ const Clients = () => {
     <section id="testimonials" className="py-20">
       <h1 className="heading">
         From
-        <span className="text-purple"> Testimonials</span>
+        <span className="text-sandyellow"> Testimonials</span>
       </h1>
 
       <div className="flex flex-col items-center max-lg:mt-10">
         <div
           // remove bg-white dark:bg-black dark:bg-grid-white/[0.05], h-[40rem] to 30rem , md:h-[30rem] are for the responsive design
-          className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden"
+          className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden mb-4"
         >
           <InfiniteMovingCards
             items={testimonials}

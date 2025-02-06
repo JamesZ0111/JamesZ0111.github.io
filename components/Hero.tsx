@@ -60,7 +60,7 @@ const Hero = () => {
             Hi! I&apos;m James(Haolin), a robotics engineering based in Melbourne.
           </p>
 
-          <a href="#about">
+          <a href="#projects">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}

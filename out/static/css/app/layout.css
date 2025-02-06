@@ -1795,8 +1795,8 @@ video {
 .bg-\[linear-gradient\(40deg\2c var\(--gradient-background-start\)\2c var\(--gradient-background-end\)\)\] {
   background-image: linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end));
 }
-.bg-\[radial-gradient\(\#CBACF9_40\%\2c transparent_60\%\)\] {
-  background-image: radial-gradient(#CBACF9 40%,transparent 60%);
+.bg-\[radial-gradient\(\#CCA16F_40\%\2c transparent_60\%\)\] {
+  background-image: radial-gradient(#CCA16F 40%,transparent 60%);
 }
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
@@ -1952,12 +1952,6 @@ video {
 .pt-36 {
   padding-top: 9rem;
 }
-.pt-10 {
-  padding-top: 2.5rem;
-}
-.pt-20 {
-  padding-top: 5rem;
-}
 .pt-40 {
   padding-top: 10rem;
 }
@@ -2058,6 +2052,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(203 172 249 / var(--tw-text-opacity));
 }
+.text-sandyellow {
+  --tw-text-opacity: 1;
+  color: rgb(204 161 111 / var(--tw-text-opacity));
+}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -2069,10 +2067,6 @@ video {
 .text-white-200 {
   --tw-text-opacity: 1;
   color: rgb(193 194 211 / var(--tw-text-opacity));
-}
-.text-sandyellow {
-  --tw-text-opacity: 1;
-  color: rgb(204 161 111 / var(--tw-text-opacity));
 }
 .antialiased {
   -webkit-font-smoothing: antialiased;
