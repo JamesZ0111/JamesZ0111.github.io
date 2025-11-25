@@ -19,8 +19,8 @@ const Footer = () => {
                 className="inline-block"
                 encryptedClassName="text-slate-400"
                 revealedClassName="bg-clip-text text-transparent bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200"
-                revealDelayMs={60}
-                flipDelayMs={45}
+                revealDelayMs={140}
+                flipDelayMs={95}
               />
             </span>
           </h1>
