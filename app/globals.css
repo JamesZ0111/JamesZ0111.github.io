@@ -83,3 +83,22 @@
     @apply font-bold text-4xl md:text-5xl text-center;
   }
 }
+
+@layer utilities {
+  .animate-aurora {
+    animation: aurora 60s linear infinite;
+  }
+}
+
+@keyframes aurora {
+  from {
+    background-position:
+      50% 50%,
+      50% 50%;
+  }
+  to {
+    background-position:
+      350% 50%,
+      350% 50%;
+  }
+}

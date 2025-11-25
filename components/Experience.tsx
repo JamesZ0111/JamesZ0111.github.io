@@ -1,53 +1,38 @@
-import React from "react";
-
 import { workExperience } from "@/data";
-import { Button } from "./ui/MovingBorders";
 
 const Experience = () => {
   return (
-    <div className="py-20 w-full">
+    <section className="py-20 w-full">
       <h1 className="heading">
-        My <span className="text-sandyellow">work experience</span>
+        My <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200">work experience</span>
       </h1>
 
-      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
+      <div className="mt-12 grid gap-6 md:grid-cols-2">
         {workExperience.map((card) => (
-          <Button
+          <article
             key={card.id}
-            //   random duration will be fun , I think , may be not
-            duration={Math.floor(Math.random() * 10000) + 10000}
-            borderRadius="1.75rem"
-            style={{
-              //   add these two
-              //   you can generate the color from here https://cssgradient.io/
-              background: "rgb(4,7,29)",
-              backgroundColor:
-                "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-              // add this border radius to make it more rounded so that the moving border is more realistic
-              borderRadius: `calc(1.75rem* 0.96)`,
-            }}
-            // remove bg-white dark:bg-slate-900
-            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            className="group rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_60px_rgba(3,8,23,0.45)] transition-transform duration-300 hover:-translate-y-1 hover:border-white/30"
           >
-            <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
+            <div className="flex items-start gap-5">
               <img
                 src={card.thumbnail}
-                alt={card.thumbnail}
-                className="lg:w-32 md:w-20 w-16"
+                alt={card.title}
+                className="h-16 w-16 flex-shrink-0 rounded-xl object-cover"
+                loading="lazy"
               />
-              <div className="lg:ms-5">
-                <h1 className="text-start text-xl md:text-2xl font-bold">
+              <div className="space-y-3">
+                <h2 className="text-lg font-semibold text-white md:text-xl">
                   {card.title}
-                </h1>
-                <p className="text-start text-white-100 mt-3 font-semibold">
+                </h2>
+                <p className="text-sm text-slate-300 leading-relaxed">
                   {card.desc}
                 </p>
               </div>
             </div>
-          </Button>
+          </article>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
