@@ -7,16 +7,19 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Haolin Zhan | Robotics & Software Engineer",
+  title: "James Zhan | Robotics & Software Engineer",
   description:
-    "Portfolio of Haolin Zhan, a Melbourne-based robotics and software engineer specialising in automation, full-stack web development, and high-impact digital products.",
+    "Portfolio of James Zhan, a Melbourne-based robotics and software engineer specialising in automation, full-stack web development, and high-impact digital products.",
   openGraph: {
-    title: "Haolin Zhan | Robotics & Software Engineer",
+    title: "James Zhan | Robotics & Software Engineer",
     description:
       "Showcasing robotics, automation, and full-stack web projects built with Next.js, TypeScript, and modern cloud tooling.",
     url: "https://jamesz0111.github.io",
-    siteName: "Haolin Zhan Portfolio",
+    siteName: "James Zhan Portfolio",
     type: "website",
+  },
+  icons: {
+    icon: "/images/tab%20picture.jpg",
   },
 };
 
@@ -28,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/j_logo.png" sizes="any" />
+        <link rel="icon" href="/images/tab%20picture.jpg" sizes="any" />
       </head>
   <body className={inter.className + " bg-black text-white antialiased"}>
         <ThemeProvider

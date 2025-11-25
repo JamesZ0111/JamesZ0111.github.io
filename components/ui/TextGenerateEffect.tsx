@@ -30,12 +30,13 @@ export const TextGenerateEffect = ({
     return (
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
+          const baseClass = "dark:text-white text-slate-900";
+          const highlightClass = "text-transparent bg-clip-text bg-gradient-to-r from-rose-100 via-pink-200 to-white drop-shadow-[0_0_25px_rgba(244,114,182,0.35)]";
+
           return (
             <motion.span
               key={word + idx}
-              // change here if idx is greater than 3, change the text color to #CBACF9
-              className={` ${idx > 1 ? "text-sandyellow" : "dark:text-white text-black"
-                } opacity-0`}
+              className={`${idx > 1 ? highlightClass : baseClass} opacity-0`}
             >
               {word}{" "}
             </motion.span>

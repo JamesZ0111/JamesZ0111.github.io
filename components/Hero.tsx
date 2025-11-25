@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa6";
 import { motion } from "framer-motion";
 
@@ -33,11 +34,29 @@ const Hero = () => {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.8, delay: 0.25 }}
             className="text-center md:tracking-wider mb-8 text-sm md:text-lg lg:text-xl text-slate-300 max-w-2xl"
           >
-            I&apos;m Haolin Zhan, a Melbourne-based robotics and software engineer focused on building robust automation, performant web platforms, and tools that scale from prototype to production.
+            I&apos;m James Zhan, a Melbourne-based robotics and software engineer focused on building robust automation, performant web platforms, and tools that scale from prototype to production.
           </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="relative mb-10"
+          >
+            <div className="relative mx-auto w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border border-white/10 shadow-[0_15px_50px_rgba(15,23,42,0.35)]">
+              <Image
+                src="/images/james-headshot.jpg"
+                alt="Portrait of James Zhan"
+                fill
+                sizes="(max-width: 768px) 160px, 192px"
+                className="object-cover"
+                priority
+              />
+            </div>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
