@@ -73,9 +73,25 @@ const RecentProjects = () => {
                     </div>
                   </button>
 
-                  <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
+                  <div className="mt-6 flex flex-col gap-4">
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-blue-100 transition hover:border-white/50 hover:text-white ${
+                        item.id === 1 ? "order-1 self-start" : "order-2 self-start"
+                      }`}
+                    >
+                      Visit website
+                      <FaLocationArrow className="text-sm" />
+                    </a>
+
                     {item.iconLists.length > 0 && (
-                      <div className="flex items-center">
+                      <div
+                        className={`flex items-center ${
+                          item.id === 1 ? "order-2" : "order-1"
+                        }`}
+                      >
                         {item.iconLists.map((icon, index) => (
                           <div
                             key={index}
@@ -86,15 +102,6 @@ const RecentProjects = () => {
                         ))}
                       </div>
                     )}
-                    <a
-                      href={item.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-blue-100 transition hover:border-white/50 hover:text-white"
-                    >
-                      Visit website
-                      <FaLocationArrow className="text-sm" />
-                    </a>
                   </div>
 
                   <div

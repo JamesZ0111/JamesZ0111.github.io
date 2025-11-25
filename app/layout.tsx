@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: "/images/tab%20picture.jpg",
+    icon: "/images/tab-picture.jpg",
   },
 };
 
@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/images/tab%20picture.jpg" sizes="any" />
+        <link rel="icon" href="/images/tab-picture.jpg" sizes="any" />
       </head>
   <body className={inter.className + " bg-black text-white antialiased"}>
         <ThemeProvider
