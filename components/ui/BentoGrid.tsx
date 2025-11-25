@@ -10,7 +10,6 @@ import { cn } from "@/lib/utils";
 
 
 import { BackgroundGradientAnimation } from "./GradientBg";
-import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
 
@@ -138,8 +137,23 @@ export const BentoGridItem = ({
             {title}
           </div>
 
-          {/* for the github 3d globe */}
-          {id === 2 && <GridGlobe />}
+          {id === 2 && (
+            <div className="relative mt-6 grid gap-3 text-xs font-mono uppercase tracking-[0.2em] text-blue-200/70">
+              <p className="text-sm text-slate-200">
+                Global research collaborations spanning ANSTO, Monash, and RMIT
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {["Photon Science", "AI Clinics", "Robotics", "Infra"].map((chip) => (
+                  <span
+                    key={chip}
+                    className="rounded-full border border-white/20 px-3 py-1 text-[11px] text-white/80"
+                  >
+                    {chip}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Tech stack list div */}
           {id === 3 && (
